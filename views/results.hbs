@@ -1,0 +1,20 @@
+<h1>{{title}}</h1>
+<h2>Your Results:</h2>
+
+<div id="resultsDiv">
+    <div id="innerResultsDiv">
+        <p id="firstLine">{{accuracyMessage}}</p>
+        <p id="numErrors">{{typingRoundData.numErrors}} Errors Made</p>
+        <p id="wpmLine">{{typingRoundData.wpm}} WPM</p>
+        <p id="percentLine">{{typingRoundData.accuracy}}% Success Rate</p>
+        <p id="timeLine">{{typingRoundData.time}} Seconds Taken</p>
+    </div>
+</div>
+<br>
+<form action="/" method="get">
+    <button type="submit" id="homeBtn" name="homeBtn">Home</button>
+</form>
+<br>
+<form action="/anotherGo" method="get">
+    <button type="submit" id="anotherBtn" name="anotherBtn">Another!</button>
+</form>

@@ -1,0 +1,19 @@
+<div id="typingMessage" tabindex="1">
+
+    <p>Elapsed Time: <span id="timer">0:00</span></p>
+    <br>
+    <p>Click on the 'Start' button when you are ready to begin. Read the text below and type it as it appears. </p>
+    <p>When you are finished, click on the 'Done' button or press the ENTER key.</p>
+    <br>
+<form action="/results" method="post" name="typingForm">
+    <p id="msgToType" name="msgToType">{{{msgToType}}}</p>
+    <br>
+    <p id="typedText"></p>
+    <input type="hidden" id="hiddenTypedText" name="typedText" value="">
+    <input type="hidden" id="numErrors" name="numErrors" value="">
+    <input type="hidden" id="timeTaken" name="timeTaken" value="">
+    <br><br>
+    <button type="button" id="startBtn" name="startBtn">Start</button>
+    <button type="submit" id="doneBtn" name="doneBtn">Done!</button>
+    </form>
+</div>

@@ -1,0 +1,152 @@
+body {
+  padding: 50px;
+  font: 16px Rockwell;
+  background-color: rgba(144, 208, 255, 0.8);
+}
+
+p {
+    font: 16px Rockwell;
+}
+
+a {
+  color: #00B7FF;
+}
+
+table {
+    font: 16px Rockwell;
+    border-collapse: collapse;
+}
+
+th {
+    border: 2px solid black;
+    padding: 4px;
+    border-spacing: 1px;
+    cursor: pointer;
+}
+
+td {
+    border: 1px solid black;
+    padding: 4px 16px;
+}
+
+button {
+    background: #33c4c2;
+    border: 1px solid #1c3439;
+    padding: 5px 15px 5px 15px;
+    box-shadow: inset -1px -1px 3px #3768ff;
+    border-radius: 3px;
+    font: 18px Rockwell;
+    font-weight: bold;
+}
+
+
+
+/******
+LOGIN/SIGNUP PAGES
+******/
+
+#loginDiv, #signupDiv {
+    max-width: 450px;
+}
+
+#loginDiv label, #signupDiv label {
+    display: block;
+    float: left;
+    width: 100px;
+    color: #05973e;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+#loginDiv input, #signupDiv input {
+    border-radius: 3px;
+    border: 1px solid #1c3439;
+    outline: none;
+    padding: 5px 8px 5px 8px;
+    box-shadow: inset 1px 1px 4px #0b1216;
+    background: #d5e6ff;
+    width: 50%;
+    margin: 2px;
+}
+
+#loginBtn {
+    background: #4aeb4d;
+}
+
+#loginDiv fieldset, #signupDiv fieldset {
+    border-radius: 10px;
+    margin: 0px 0px 10px 0px;
+    border: 1px solid #1c3439;
+    padding: 18px;
+    background: #c2d5ff;
+    box-shadow: inset 0px 0px 15px #1c3439;
+}
+
+#loginDiv fieldset legend, #signupDiv fieldset legend {
+    color: #057e3d;
+    border-top: 1px solid #1c3439;
+    border-left: 1px solid #1c3439;
+    border-right: 1px solid #1c3439;
+    border-radius: 5px 5px 0px 0px;
+    background: #c2d5ff;
+    padding: 0px 8px 3px 8px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+/******
+SIGNUP PAGE OVERRIDES
+******/
+#signupDiv label {
+    color: #3768ff;
+}
+
+#signupBtn {
+    background: #3768ff;
+    box-shadow: inset -1px -1px 3px #05973e;
+}
+
+#signupDiv fieldset legend {
+    color: #3768ff;
+}
+
+
+
+
+/******
+TYPING PAGE
+******/
+
+#msgToType {
+    font-weight: bold;
+    font: 26px Rockwell;
+    display: inline-block;
+}
+
+#typedText {
+    height: 28px;
+    font: 20px MV Boli;
+}
+
+
+
+
+/******
+RESULTS PAGE
+******/
+
+#innerResultsDiv {
+    display: inline-block;
+    text-align: left;
+}
+
+#innerResultsDiv p {
+    font: 22px Rockwell;
+}
+
+
+
+/*format helpers:*/
+/*https://www.sanwebe.com/2014/08/css-html-forms-designs*/
+/*https://stackoverflow.com/questions/1269589/css-center-block-but-align-contents-to-the-left*/

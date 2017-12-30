@@ -1,0 +1,37 @@
+<h1>{{title}}</h1>
+<h2>High Scores</h2>
+
+<table id="dataTable" name="dataTable">
+    <!--TODO move all table stuff into handlebars once finalized    -->
+    <thead>
+        <tr>
+            <th onclick="sortScoreTbl(tblRows, 0, asc1)">Username</th>
+            <th onclick="sortScoreTbl(tblRows, 1, asc1)">Time</th>
+            <th onclick="sortScoreTbl(tblRows, 2, asc1)"># Err</th>
+            <th onclick="sortScoreTbl(tblRows, 3, asc1)">% Acc</th>
+            <th onclick="sortScoreTbl(tblRows, 4, asc1)">WPM</th>
+        </tr>
+    </thead>
+
+    <tbody id="tblRows">
+        {{#each typingScores}}
+            <tr>
+                <td>{{this.user}}</td>
+                <td>{{this.time}}</td>
+                <td>{{this.numErrors}}</td>
+                <td>{{this.accuracy}}</td>
+                <td>{{this.wpm}}</td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>
+
+<br>
+
+<form action="/typethis" method="get">
+<button type="submit" id="playBtn" name="playBtn" value="Play">Play</button>
+</form>
+
+<br>
+
+<p><a href="/logout">Logout</a></p>
